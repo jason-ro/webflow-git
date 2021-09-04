@@ -1,0 +1,22 @@
+name: webflow-git
+
+env:
+  SITE: https://alpinejs.webflow.io/
+
+on:
+  workflow_dispatch
+
+jobs:
+  track:
+    name: Track Webflow site changes
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Get Webflow Site $SITE
+        uses: loomchild/webflow-get
+        with:
+          site: $SITE
