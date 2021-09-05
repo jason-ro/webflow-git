@@ -18,9 +18,16 @@ jobs:
         run: |
           if [ -e $GITHUB_WORKSPACE/.site ]
           then
-            echo "SITE=$(cat $GITHUB_WORKSPACE/.site | xargs)" >> $GITHUB_ENV
+            SITE=`cat $GITHUB_WORKSPACE/.site | xargs`
+            echo "SITE=$SITE" >> $GITHUB_ENV
           else
             echo ".site file not found, skipping"
+            exit 1
+          fi
+
+          if [ -z "$SITE" ]
+          then
+            echo ".site file is empty, skipping"
             exit 1
           fi
 
