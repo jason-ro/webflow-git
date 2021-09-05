@@ -20,6 +20,7 @@ jobs:
           then
             echo "SITE=$(cat $GITHUB_WORKSPACE/.site | xargs)" >> $GITHUB_ENV
           else
+            echo ".site file not found, skipping"
             exit 1
           fi
 
