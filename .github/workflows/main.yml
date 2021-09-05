@@ -1,7 +1,5 @@
 name: webflow-git
 
-env:
-  SITE: https://alpinejs.webflow.io/
 
 on:
   workflow_dispatch
@@ -16,6 +14,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Get Site
+        run: echo "SITE=$(cat .site | xargs)" >> $GITHUB_ENV
+
       - name: Get Webflow Site ${{ env.SITE }}
         uses: loomchild/webflow-get@master
         with:
@@ -26,4 +27,4 @@ jobs:
         with:
           author_name: Webflow Git
           author_email: webflowgit@local
-          message: 'Your commit message'
+          message: 'Site updated'
