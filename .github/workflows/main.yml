@@ -2,8 +2,8 @@ name: webflow-git
 
 
 on:
-  - workflow_dispatch
-  - schedule:
+  workflow_dispatch:
+  schedule:
     - cron:  '7 * * * *'
 
 jobs:
