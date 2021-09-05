@@ -20,3 +20,10 @@ jobs:
         uses: loomchild/webflow-get@master
         with:
           site: ${{ env.SITE }}
+
+      - name: Commit and Push
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: Webflow Git
+          author_email: webflowgit@local
+          message: 'Your commit message'
