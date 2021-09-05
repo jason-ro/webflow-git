@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Get Webflow Site
+      - name: Get Webflow Site {{ env.SITE }}
         uses: loomchild/webflow-get@v1.1
         with:
-          site: $SITE
+          site: {{ env.SITE }}
