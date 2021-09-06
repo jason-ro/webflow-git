@@ -1,6 +1,5 @@
 name: webflow-git
 
-
 on:
   workflow_dispatch:
   schedule:
@@ -16,27 +15,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Get Site
-        run: |
-          if [ -e $GITHUB_WORKSPACE/.site ]
-          then
-            SITE=`cat $GITHUB_WORKSPACE/.site | xargs`
-            echo "SITE=$SITE" >> $GITHUB_ENV
-          else
-            echo ".site file not found, skipping"
-            exit 1
-          fi
-
-          if [ -z "$SITE" ]
-          then
-            echo ".site file is empty, skipping"
-            exit 1
-          fi
-
-      - name: Get Webflow Site ${{ env.SITE }}
+      - name: Process Webflow Sites
         uses: loomchild/webflow-get@master
-        with:
-          site: ${{ env.SITE }}
 
       - name: Commit and Push
         uses: EndBug/add-and-commit@v7
