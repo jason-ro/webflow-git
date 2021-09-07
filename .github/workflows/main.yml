@@ -24,3 +24,4 @@ jobs:
           author_name: Webflow Git
           author_email: webflowgit@local
           message: 'Site updated'
+          pull_strategy: '--rebase'
