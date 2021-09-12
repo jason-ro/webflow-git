@@ -1,0 +1,6 @@
+# site: www.example.com
+# pages: true
+# OR
+# pages:
+#   ignore:
+#   - posts/
