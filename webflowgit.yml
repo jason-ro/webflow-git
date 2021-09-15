@@ -1,6 +1,6 @@
 # site: www.example.com
-# pages: true
+# pages: false
 # OR
 # pages:
 #   ignore:
-#   - posts/
+#   - /posts/**
