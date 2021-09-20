@@ -14,20 +14,26 @@ It works by taking a snapshot of the site at regular intervals, formatting the c
 <screenshot>
 
 2. Name your new repository the same as your site domain, for example www.example.com. Alternatively you can choose any name you prefer, and specify the domain in the [configuration](#Configuration) file.
-<screenshot>
+[screenshot]
 
 ## Configuration
   
-You can customize Webflow Git by editing [webflowgit.yml](./webflowgit.yml) configuration file.
+You can customize Webflow Git by editing [webflowgit.yml](./webflowgit.yml) configuration file. To do that, click on the Pen icon when viewing the file contents.
+[screenshot]
+  
+Make sure to test your changes by launching a [Manual snapshot]
 
 ### site
 
 ### pages
 Ignore (since includes cms by default). One example would be to ignore the CMS-generated pages (as they are included by default)
 
-### Snapshot frequency
-Every hour
+### Automatic snapshot frequency
+By default, snapshot is retrieved every hour. A your site is crawled every hour.
 Can be customized by editing the config file (link)
+
+### Manual snapshot
+You can launch the tool manually by...
   
 ## Epilogue
   
