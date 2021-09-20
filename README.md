@@ -4,16 +4,18 @@
 
 ## Introduction
 
-Webflow Git is a simple utility used to track changes to a Webflow site on GitHub. Both style and content changes are tracked, and every modification is stored as a GitHub commit. It's simple to setup, because it doesn't require access to your Webflow account and all configuration can be done via GitHub web interface.
+Webflow Git is a simple utility used to track changes to a Webflow site on GitHub. Both style and content changes are tracked, and every modification is stored as a GitHub commit. It's simple to setup, because it doesn't require access to your Webflow account and all customization can be done via GitHub web interface.
 
-It works by taking a snapshot of the site at regular intervals, formatting the code and comparing it to the previous revision. If it detects any difference, it commits the change to the repository.
+It works by visiting your site at regular intervals, downloading, formatting and comparing the code to the previous revision. If any difference is detected, a change is committed to the repository.
 
 ## Usage
 
-1. Click "Use this template" button above the code to start generating a new repository based on this one.
-<screenshot>
+0. Log-in or create a Gitub account.
 
-2. Name your new repository the same as your site domain, for example www.example.com. Alternatively you can choose any name you prefer, and specify the domain in the [configuration](#Configuration) file.
+1. Click "Use this template" button above the code to start generating a new repository based on this one.
+[screenshot]
+
+2. Name your new repository the same as your site domain (e.g. www.example.com). Alternatively you can choose any name you like and specify the domain in the [configuration](#Configuration).
 [screenshot]
 
 ## Configuration
@@ -21,7 +23,7 @@ It works by taking a snapshot of the site at regular intervals, formatting the c
 You can customize Webflow Git by editing [webflowgit.yml](./webflowgit.yml) configuration file. To do that, click on the Pen icon when viewing the file contents.
 [screenshot]
   
-Make sure to test your changes by launching a [Manual snapshot]
+Make sure to test your changes by launching a [Manual snapshot](#Manual-screenshot).
 
 ### site
 
@@ -33,7 +35,7 @@ By default, snapshot is retrieved every hour. A your site is crawled every hour.
 Can be customized by editing the config file (link)
 
 ### Manual snapshot
-You can launch the tool manually by...
+You can launch the tool manually by clicking on actions [screenshot] on the menu below your project name, and then select `webflow-git` workflow and finally click on Run workflow.
   
 ## Epilogue
   
