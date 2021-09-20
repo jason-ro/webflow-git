@@ -28,3 +28,9 @@ Ignore (since includes cms by default). One example would be to ignore the CMS-g
 ### Snapshot frequency
 Every hour
 Can be customized by editing the config file (link)
+  
+## Epilogue
+  
+This project was created out of frustration to fix regressions on Webflow projects. Although there's a built-in backup functionality, it's time-consuming to find out at which point something has broken down, and then, due to lack of diff functionality, it's very difficult to understand the nature of the modification that caused the issue.
+
+Some parts of this tool are inspired by an excellent [Upptime](https://upptime.js.org/) site monitor., most notably using GitHub Teamplate and configuration management.
