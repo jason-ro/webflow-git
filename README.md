@@ -17,6 +17,8 @@ It works by taking a snapshot of the site at regular intervals, formatting the c
 <screenshot>
 
 ## Configuration
+  
+You can customize Webflow Git by editing [webflowgit.yml](./webflowgit.yml) configuration file.
 
 ### site
 
