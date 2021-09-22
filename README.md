@@ -10,13 +10,13 @@ The utility is simple to set up because it doesn't require access to your Webflo
 
 ## Installation
 
-0. Log-in or create a GitHub account.
+1. Log-in or create a GitHub account.
 
-1. Click the "Use this template" button above the code to generate a new repository based on this template repository:
+2. Click the "Use this template" button above the code to generate a new repository based on this template repository:
 
 ![Use this template](https://user-images.githubusercontent.com/2506014/134331253-501c4947-e66a-4066-b939-9a48ff001d60.png)
 
-2. Name your new repository the same as your Webflow site domain (e.g. www.example.com). Alternatively, you can choose any repository name and specify the site domain in the [configuration file](#configuration):
+3. Name your new repository the same as your Webflow site domain (e.g. www.example.com). Alternatively, you can choose any repository name and specify the site domain in the [configuration file](#configuration):
 
 ![Repository name](https://user-images.githubusercontent.com/2506014/134332104-ee3c654d-6481-465f-b791-56a7dd2c50ca.png)
 
