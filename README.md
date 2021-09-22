@@ -4,19 +4,19 @@
 
 ## Introduction
 
-Webflow Git is a simple utility used to monitor changes to a Webflow site on GitHub. Both style and content changes are tracked, and every change is stored as a GitHub commit. 
+Webflow Git is a simple utility used to monitor and track changes to a Webflow site on GitHub. Both style and content changes are detected, and every change is stored as a GitHub commit. 
 
 The utility is simple to set up because it doesn't require access to your Webflow account and all customization can be done via GitHub web interface.
 
-## Usage
+## Installation
 
 0. Log-in or create a GitHub account.
 
-1. Click "Use this template" button above the code to start generating a new repository based on this one.
+1. Click "Use this template" button above the code to generate a new repository based on this template repository.
 
 ![Use this template]()
 
-2. Name your new repository the same as your site domain (e.g. www.example.com). Alternatively, you can choose any name you like and specify the domain in the [configuration](#configuration).
+2. Name your new repository the same as your Webflow site domain (e.g. www.example.com). Alternatively, you can choose any repository name and specify the site domain in the [configuration file](#configuration).
 
 ![Repository name]()
 
@@ -30,10 +30,31 @@ Make sure to test your changes by [triggering the check manually](#manual-trigge
 
 ### site
 
-Specify the site to be 
+Specify the site to be monitored, e.g.:
+
+```
+site: www.example.com
+```
+
+By default the site domain is the same as your repository name.
 
 ### pages
-Ignore (since includes CMS by default). One example would be to ignore the CMS-generated pages (as they are included by default)
+
+Do not track changes in pages content (track only style changes):
+
+```
+pages: false
+```
+
+Ignore changes in some pages (for example CMS-generated pages, like blog posts or product pages). This setting uses [glob syntax](https://github.com/micromatch/picomatch#globbing-features):
+
+```
+pages:
+  ignore:
+  - /posts/**
+```
+
+By default all pages are tracked.
 
 ## How it works
 
@@ -47,9 +68,9 @@ Your site is checked for updates every hour.
 
 ### Manual trigger
 
-You can launch the check manually by clicking on actions on the menu below your project name, then select `webflow-git` workflow and finally click on Run workflow.
+You can launch the check manually. To do that click Actions link on the menu below your project name, then select `webflow-git` workflow and finally click on Run workflow.
 
-![Trigger manually]
+![Trigger manually]()
   
 ## Epilogue
   
