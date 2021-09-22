@@ -36,6 +36,12 @@ Specify the site to be monitored, e.g.:
 site: www.example.com
 ```
 
+Disable tracking completely:
+
+```
+site: false
+```
+
 By default, the site domain is the same as your repository name.
 
 ### pages
