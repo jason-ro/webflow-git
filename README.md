@@ -12,17 +12,17 @@ The utility is simple to set up because it doesn't require access to your Webflo
 
 0. Log-in or create a GitHub account.
 
-1. Click "Use this template" button above the code to generate a new repository based on this template repository.
+1. Click "Use this template" button above the code to generate a new repository based on this template repository:
 
 ![Use this template](https://user-images.githubusercontent.com/2506014/134331253-501c4947-e66a-4066-b939-9a48ff001d60.png)
 
-2. Name your new repository the same as your Webflow site domain (e.g. www.example.com). Alternatively, you can choose any repository name and specify the site domain in the [configuration file](#configuration).
+2. Name your new repository the same as your Webflow site domain (e.g. www.example.com). Alternatively, you can choose any repository name and specify the site domain in the [configuration file](#configuration):
 
 ![Repository name](https://user-images.githubusercontent.com/2506014/134332104-ee3c654d-6481-465f-b791-56a7dd2c50ca.png)
 
 ## Configuration
   
-You can customize Webflow Git by editing [webflowgit.yml](./webflowgit.yml) configuration file. To achieve that, open the file contents and click on the Pen icon.
+You can customize Webflow Git by editing [webflowgit.yml](./webflowgit.yml) configuration file. To achieve that, open the file contents and click on the Pen icon:
 
 ![Edit configuration](https://user-images.githubusercontent.com/2506014/134331242-fd3da739-705c-4e18-9f37-b6db6398c6ef.png)
   
@@ -68,7 +68,7 @@ Your site is checked for updates every hour.
 
 ### Manual trigger
 
-You can launch the check manually. To achieve that, click the Actions link on the menu below your project name, then select `webflow-git` workflow and finally click on "Run workflow" button.
+You can launch the check manually. To achieve that, click the Actions link on the menu below your project name, then select `webflow-git` workflow and finally click on "Run workflow" button:
 
 ![Trigger manually](https://user-images.githubusercontent.com/2506014/134331249-c2e64b87-3d8d-4dbd-b1d9-46352fd5d3bd.png)
   
