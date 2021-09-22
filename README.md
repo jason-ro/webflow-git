@@ -18,7 +18,7 @@ The utility is simple to set up because it doesn't require access to your Webflo
 
 2. Name your new repository the same as your Webflow site domain (e.g. www.example.com). Alternatively, you can choose any repository name and specify the site domain in the [configuration file](#configuration).
 
-![Repository name](https://user-images.githubusercontent.com/2506014/134331251-c8d5638b-0177-49c9-a98d-874b225e3fe6.png)
+![Repository name](https://user-images.githubusercontent.com/2506014/134332104-ee3c654d-6481-465f-b791-56a7dd2c50ca.png)
 
 ## Configuration
   
