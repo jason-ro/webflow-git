@@ -22,7 +22,7 @@ The utility is simple to set up because it doesn't require access to your Webflo
 
 ## Configuration
   
-You can customize Webflow Git by editing [webflowgit.yml](./webflowgit.yml) configuration file. To do that, open the file contents and click on the Pen icon.
+You can customize Webflow Git by editing [webflowgit.yml](./webflowgit.yml) configuration file. To achieve that, open the file contents and click on the Pen icon.
 
 ![Edit configuration]()
   
@@ -36,7 +36,7 @@ Specify the site to be monitored, e.g.:
 site: www.example.com
 ```
 
-By default the site domain is the same as your repository name.
+By default, the site domain is the same as your repository name.
 
 ### pages
 
@@ -54,7 +54,7 @@ pages:
   - /posts/**
 ```
 
-By default all pages are tracked.
+By default, all pages are tracked.
 
 ## How it works
 
@@ -64,11 +64,11 @@ The utility works by visiting your site at regular intervals, downloading, forma
 
 Your site is checked for updates every hour. 
 
-> Advanced: this can be customized by updating the cron schedule in [workflow configuration file](./.github/workflows/main.yml).
+> Advanced: this can be customized by updating the cron schedule in the [workflow configuration file](./.github/workflows/main.yml).
 
 ### Manual trigger
 
-You can launch the check manually. To do that click Actions link on the menu below your project name, then select `webflow-git` workflow and finally click on Run workflow.
+You can launch the check manually. To achieve that, click the Actions link on the menu below your project name, then select `webflow-git` workflow and finally click on Run workflow.
 
 ![Trigger manually]()
   
