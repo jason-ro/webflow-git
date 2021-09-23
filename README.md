@@ -83,3 +83,5 @@ You can launch the check manually. To achieve this, click the Actions link on th
 This project was created out of frustration with random regressions in Webflow projects. Although there's a built-in backup functionality, it's time-consuming to find out at which point something has broken down, and then, due to the lack of diff functionality, it's very difficult to understand the nature of the modification that caused the regression. The problem becomes even more severe if multiple people develop the same project.
 
 Some parts of this tool are inspired by an excellent [Upptime](https://upptime.js.org/) site monitor, most notably using the GitHub Template and configuration management.
+
+<sub>webflowgitbyloomchild</sub>
