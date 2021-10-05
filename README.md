@@ -30,10 +30,10 @@ Make sure to test your changes by [triggering the check manually](#manual-trigge
 
 ### site
 
-Specify the site to be monitored, e.g.:
+Specify URL of the site to be monitored, including the protocol, e.g.:
 
 ```
-site: www.example.com
+site: https://www.example.com
 ```
 
 Disable tracking completely:
