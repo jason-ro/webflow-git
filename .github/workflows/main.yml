@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Process Webflow Sites
+      - name: Process Webflow Site
         uses: loomchild/webflow-get@v1
 
       - name: Commit and Push
