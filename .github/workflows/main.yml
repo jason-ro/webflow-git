@@ -2,6 +2,11 @@ name: webflow-git
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: ignore timestamp and force update
+        required: false
+        default: ''
   schedule:
     - cron:  '40 * * * *'
 
